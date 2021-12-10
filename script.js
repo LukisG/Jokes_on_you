@@ -64,7 +64,7 @@ createbuttonjoke.addEventListener("click", insultme);
 
 //insult fetch---------------------------------------------------------
 function insultme(){
-  fetch('https://evilinsult.com/generate_insult.php?lang=en&type=json')
+  fetch('https://cors-anywhere.herokuapp.com/https://evilinsult.com/generate_insult.php?lang=en&type=json')
   .then(response => response.json())
   .then(data => {
       //console.log(data)
